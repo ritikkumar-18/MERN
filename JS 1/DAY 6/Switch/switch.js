@@ -1,5 +1,6 @@
 // Switch case
 
+// check days name
 var day =2;
  switch(day)
  {
@@ -28,7 +29,7 @@ var day =2;
 
  }
 
-
+// check month's total days
 
 var month=4
 switch(month)
@@ -56,7 +57,7 @@ switch(month)
 }
 
 
-
+// check zero, positive, negative
 var n=20
 switch(true)
 {
@@ -72,15 +73,3 @@ switch(true)
 
 
 
-var n=20
-switch(true)
-{
-    case n==0:
-        console.log("zero")
-        break
-    case n<0:
-        console.log("-ve")
-        break
-    default:
-        console.log("+ve")
-}

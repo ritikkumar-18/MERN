@@ -1,4 +1,6 @@
 // nested if
+
+// check number is zero, positive, negative
  var a = 24
  if (a==0)
 {
@@ -27,7 +29,7 @@
         }
     }
 
-
+// check eligibility of DL
 var age = 22
 var hasdl =true
 if(age<18)
@@ -48,7 +50,7 @@ else{
 }
 
 
-
+// check transaction and pin
 var pin =1234
 var amount=500
 

@@ -1,8 +1,8 @@
 // strings
 
 let str='hello world'
-console.log(str.at(0)) // returns the stings's element present at index 0
-console.log(str.charAt(1)) // returns the stings's element present at index 1
+console.log(str.at(0)) // returns the strings's element present at index 0
+console.log(str.charAt(1)) // returns the strings's element present at index 1
 console.log(str.length) // gives total length of string 
 console.log(str.concat(" asdfgdf")) // concate the stings 
 console.log(str + " hello")  // also use to caoncate the strings

@@ -24,7 +24,12 @@ console.log(obj)
 let str="abcdabcaba"
 let obj1={}
 for(let item of str){
-    obj1[item]=obj1[item]+1 || 1
+    if(obj1[item]){
+        obj1[item]++
+    }
+    else{
+        obj1[item]=1
+    }
 }
 console.log(obj1)
 

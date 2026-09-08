@@ -160,16 +160,36 @@ for(let r6=1;r6<=g;r6++){
     console.log(str10)}
 
 
+// to print diagonal and reverse diagonal stars
+
+let h=9
+for(let r6=1;r6<=h;r6++){
+    let str10=''
+    for(let c7=1;c7<=h;c7++){
+        if(r6==1||c7==1||r6==h||c7==h||r6==c7||(c7==h-r6+1)){
+            str10+='* '
+        }
+        else{
+            str10+='  '
+        }   }
+    console.log(str10)}
 
 
-// let g=6
-// for(let r6=1;r6<=g;r6++){
-//     let str10=''
-//     for(let c7=1;c7<=g;c7++){
-//         if(r6==1||c7==1||r6==g||c7==g||r6==c7||(c7=g-r6+1)){
-//             str10+='* '
-//         }
-//         else{
-//             str10+='  '
-//         }   }
-//     console.log(str10)}
+// to print squares in ending and number in hollow square
+
+let n1=5
+let count2=1
+for(let r=1;r<=n1;r++){
+  let str=''
+  for(let c=1;c<=n1;c++){
+    if(r==1||c==1||r==n1||c==n1){
+      str+="* "
+    }
+    else{
+      str+=count2+" "
+      count2++
+    }
+  }
+  console.log(str)
+}
+

@@ -46,12 +46,19 @@ for(let row=0;row<arr1.length;row++){
 
 // // column wise 
 
-  // error hai
-// let array=[[1,2,3,4],[4,5,6,7],[8,9,20,30]]
-// let str=""
-// for(let i=0;i<array.length;i++){
-//     for(let j=0;j<array[i].length;j++){
-//         str +=array[j][i]
-//     }
-// }
-// console.log(str)
+
+let array = [
+    [1, 2, 3, 4],
+    [4, 5, 6, 7],
+    [8, 9, 20, 30]
+];
+
+let str = "";
+
+for (let j = 0; j < array[0].length; j++) {
+    for (let i = 0; i < array.length; i++) {
+        str += array[i][j] + " ";
+    }
+}
+
+console.log(str);

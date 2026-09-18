@@ -146,28 +146,100 @@ console.log(findlargestsubstringcontainvowels("hello"))
         
 
 
-// // to print all palindrome substring
+// to print all palindrome substring
 
-function printallpalidrome(str){
+function pallindrome(str) {
 
+    for (let i = 0; i < str.length; i++) {
+
+        for (let j = i; j < str.length; j++) {
+
+            let ss = str.slice(i, j + 1);
+            let reverse = "";
+
+            for (let i= ss.length - 1; i >= 0; i--) {
+                reverse += ss[i];
+            }
+
+            if (ss == reverse) {
+                console.log(ss);
+            }
+        }
+    }
 }
 
+pallindrome("aba");
 // to print all substring with only vowels
 
-function printallsubstringwithonlyvowels(str){
+function printAllSubstringWithOnlyVowels(str) {
+    for (let i = 0; i < str.length; i++) {
 
+        for (let j = i ; j <= str.length; j++) {
+
+            let sub = str.slice(i, j+1 );
+            let onlyVowels = true;
+
+            for (let char of sub) {
+                if (!"aeiouAEIOU".includes(char)) {
+                    onlyVowels = false;
+                    break;
+                }
+            }
+
+            if (onlyVowels) {
+                console.log(sub);
+            }
+        }
+    }
 }
+
+printAllSubstringWithOnlyVowels("aeibc");
 
 // to print largest substring containing only vowels
 
-function printlargestsubstringcontainingonlyvowels(str){
+function printLargestSubstringContainingOnlyVowels(str) {
+    let longest = "";
+    let current = "";
 
+    for (let char of str) {
 
+        if ("aeiouAEIOU".includes(char)) {
+            current += char;
+
+            if (current.length > longest.length) {
+                longest = current;
+            }
+        } else {
+            current = "";
+        }
+    }
+
+    console.log(longest);
 }
+
+printLargestSubstringContainingOnlyVowels("abcdeiouxyz");
+
 
 // to find all substring containing target k times
 
-function findallsubstringcontainingtargetktimes(str,target, k){
+function findAllSubstringContainingTargetKTimes(str, target, k) {
 
+    for (let i = 0; i < str.length; i++) {
 
+        for (let j = i + 1; j <= str.length; j++) {
+
+            let sub = str.slice(i, j);
+            let count = 0;
+            for (let char of sub) {
+                if (char === target) {
+                    count++;
+                }
+            }
+            if (count === k) {
+                console.log(sub);
+            }
+        }
+    }
 }
+
+findAllSubstringContainingTargetKTimes("abacaba", "a", 2);

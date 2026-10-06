@@ -193,9 +193,3 @@ let r=arr20.reduce((total,curr)=>{
     return total
 },[])
 console.log(r)
-
-// or
-let s=arr20.reduce((total,curr)=>{
-    return [curr,...total]
-},[])
-console.log(s)

@@ -10,7 +10,5 @@ for(let i=0;i<arr.length;i++){
 }
     console.log(arr)
 
-    // reverse of an 2D array
-
     
     

@@ -42,7 +42,7 @@ function substringOfLenght(str,k){
 }
 console.log(substringOfLenght("abcdefgh",3))
 
-//OR better approach  samll example of sliding window
+//OR better approach  small example of sliding window
 
 function substringOflengthwithoneloop(str,k){
     let ans=[]

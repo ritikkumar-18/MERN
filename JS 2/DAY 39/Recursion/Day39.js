@@ -21,7 +21,7 @@ function mysecondRecursion(n) {
     mysecondRecursion(n-1)
 }
 mysecondRecursion(5)
-
+ 
 
 // printing counting numbers
 function mythirdRecursion(i,n) {

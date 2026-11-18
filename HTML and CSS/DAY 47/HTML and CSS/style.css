@@ -1,0 +1,11 @@
+h2{
+
+
+    background-color: rgb(158, 62, 78);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    border: 1px solid #ccc;
+}

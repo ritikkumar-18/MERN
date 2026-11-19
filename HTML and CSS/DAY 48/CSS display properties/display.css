@@ -1,0 +1,21 @@
+.box1{
+    border:10px double black;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+
+.box{
+    border:3px dotted black;
+    height: 200px;
+    width: 200px;
+}
+main{
+    height: 100vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}

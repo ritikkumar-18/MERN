@@ -1,0 +1,32 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+div{
+    border: 2px solid rgb(1, 44, 1);
+    padding: 10px;
+    margin: 10px;
+    border-radius:20px
+} 
+
+#ok{
+    border-top: 10px dotted red;
+    padding: 10px;
+    border-right: 10px double pink;
+    padding:10px 20px 30px 40px; 
+}
+
+#box{
+    height: 200px;
+    width:200px;
+    border:5px solid pink;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#box1{
+    height:200px;
+    width:200px;
+    border:5px solid lightcoral
+}
